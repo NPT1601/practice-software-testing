@@ -1,0 +1,12 @@
+TestCaseID,Title,Street,City,State,Country,Postal,ExpectedResult
+TC-ADDR-01,Nhập đầy đủ dữ liệu hợp lệ,123 Main St,Vienna,Vienna,Austria,1010,Chuyển sang bước thanh toán
+TC-ADDR-02,Để trống tất cả trường,,,,,,Hiển thị lỗi bắt buộc cho từng trường
+TC-ADDR-03,Street quá 70 ký tự,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Vienna,Vienna,Austria,1010,Lỗi: Street must be ≤ 70 characters
+TC-ADDR-04,Postal code quá 10 ký tự,123 Main St,Vienna,Vienna,Austria,12345678901,Lỗi: Postal code must be ≤ 10 characters
+TC-ADDR-05,City rỗng,123 Main St,,Vienna,Austria,1010,Lỗi: City is required
+TC-ADDR-06,State vượt quá 40 ký tự,123 Main St,Vienna,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Austria,1010,Lỗi: State must be ≤ 40 characters
+TC-ADDR-07,Country là khoảng trắng,123 Main St,Vienna,Vienna, ,1010,Lỗi: Country is required
+TC-ADDR-08,Street chỉ 1 ký tự,A,Vienna,Vienna,Austria,1010,Chuyển sang bước thanh toán
+TC-ADDR-09,Postal code đúng 10 ký tự,123 Main St,Vienna,Vienna,Austria,1234567890,Chuyển sang bước thanh toán
+TC-ADDR-10,Trường hợp ký tự đặc biệt,ABC@ 123,TPHOCHIMINH,TN,AUSTRIA,70000,Chấp nhận chuyển bước thanh toán
+TC-ADDR-11,City bé hơn 6 ký tự,123 Main St,x,Vienna,Austria,1010,Chặn không cho submit form

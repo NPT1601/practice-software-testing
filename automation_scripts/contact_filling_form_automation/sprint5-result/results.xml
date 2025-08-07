@@ -1,0 +1,491 @@
+<testsuites id="" name="" tests="54" failures="3" skipped="0" errors="0" time="173.921226">
+<testsuite name="contact_filling_form_automation/contact_filling_form_automation.spec.ts" timestamp="2025-08-02T08:48:10.762Z" hostname="chromium" tests="18" failures="1" skipped="0" time="219.822" errors="0">
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="9.742">
+<system-out>
+<![CDATA[Running test case: valid_contact_form
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form"
+✓ Test case "valid_contact_form" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_webmaster" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="13.082">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_webmaster
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_webmaster"
+✓ Test case "valid_contact_form_webmaster" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_return" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="13.263">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_return
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_return"
+✓ Test case "valid_contact_form_return" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_payments" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.693">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_payments
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_payments"
+✓ Test case "valid_contact_form_payments" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_warranty" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="15.39">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_warranty
+No validation errors found, form submitted successfully
+✓ Database validation passed for "valid_contact_form_warranty"
+✓ Test case "valid_contact_form_warranty" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_order_status" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.677">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_order_status
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_order_status"
+✓ Test case "valid_contact_form_order_status" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_empty_subject" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.295">
+<system-out>
+<![CDATA[Running test case: invalid_empty_subject
+✓ Test case "invalid_empty_subject" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_short_message" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="14.848">
+<system-out>
+<![CDATA[Running test case: invalid_short_message
+✓ Test case "invalid_short_message" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_sql" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.566">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_sql
+✓ Database validation passed for error case "invalid_file_type_sql" - message not saved
+✓ Test case "invalid_file_type_sql" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_xlsx" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="13.692">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_xlsx
+✓ Database validation passed for error case "invalid_file_type_xlsx" - message not saved
+✓ Test case "invalid_file_type_xlsx" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_csv" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="14.178">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_csv
+✓ Database validation passed for error case "invalid_file_type_csv" - message not saved
+✓ Test case "invalid_file_type_csv" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_size" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.246">
+<system-out>
+<![CDATA[Running test case: invalid_file_size
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for empty subject" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.235">
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for short message" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.311">
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for invalid file types and NOT save to database" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="25.273">
+<system-out>
+<![CDATA[Testing invalid file type: test_file.sql
+✓ File type validation passed for test_file.sql - message not saved to database
+Testing invalid file type: test_file.xlsx
+✓ File type validation passed for test_file.xlsx - message not saved to database
+Testing invalid file type: test_file.csv
+✓ File type validation passed for test_file.csv - message not saved to database
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for oversized file and NOT save to database" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.909">
+<failure message="contact_filling_form_automation.spec.ts:433:7 Should show error for oversized file and NOT save to database" type="FAILURE">
+<![CDATA[  [chromium] › contact_filling_form_automation/contact_filling_form_automation.spec.ts:433:7 › Contact Form Field Validation Tests › Should show error for oversized file and NOT save to database 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "File should be smaller than 500KB"
+    Received string:    "File should be empty."
+
+      453 |       .locator('[data-test="attachment-error"]')
+      454 |       .textContent();
+    > 455 |     expect(errorMessage).toContain("File should be smaller than 500KB");
+          |                          ^
+      456 |
+      457 |     // Database validation - message should NOT be saved
+      458 |     const messageExists = await checkMessageInDatabase(
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:455:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-chromium/video.webm]]
+
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Success Flow with Database Check › Successful form submission with database validation" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="12.178">
+<system-out>
+<![CDATA[No validation errors found, form submitted successfully
+✓ Database validation passed - message saved successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Subject Options › All subject options are available" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.244">
+</testcase>
+</testsuite>
+<testsuite name="contact_filling_form_automation/contact_filling_form_automation.spec.ts" timestamp="2025-08-02T08:48:10.762Z" hostname="firefox" tests="18" failures="1" skipped="0" time="169.605" errors="0">
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.349">
+<system-out>
+<![CDATA[Running test case: valid_contact_form
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form"
+✓ Test case "valid_contact_form" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_webmaster" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.331">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_webmaster
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_webmaster"
+✓ Test case "valid_contact_form_webmaster" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_return" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="9.385">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_return
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_return"
+✓ Test case "valid_contact_form_return" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_payments" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.936">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_payments
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_payments"
+✓ Test case "valid_contact_form_payments" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_warranty" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.82">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_warranty
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_warranty"
+✓ Test case "valid_contact_form_warranty" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_order_status" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.758">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_order_status
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_order_status"
+✓ Test case "valid_contact_form_order_status" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_empty_subject" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.902">
+<system-out>
+<![CDATA[Running test case: invalid_empty_subject
+✓ Test case "invalid_empty_subject" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_short_message" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="9.388">
+<system-out>
+<![CDATA[Running test case: invalid_short_message
+✓ Test case "invalid_short_message" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_sql" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="12.578">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_sql
+✓ Database validation passed for error case "invalid_file_type_sql" - message not saved
+✓ Test case "invalid_file_type_sql" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_xlsx" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.185">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_xlsx
+✓ Database validation passed for error case "invalid_file_type_xlsx" - message not saved
+✓ Test case "invalid_file_type_xlsx" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_csv" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.688">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_csv
+✓ Database validation passed for error case "invalid_file_type_csv" - message not saved
+✓ Test case "invalid_file_type_csv" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_size" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.18">
+<system-out>
+<![CDATA[Running test case: invalid_file_size
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for empty subject" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.323">
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for short message" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.604">
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for invalid file types and NOT save to database" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="18.577">
+<system-out>
+<![CDATA[Testing invalid file type: test_file.sql
+✓ File type validation passed for test_file.sql - message not saved to database
+Testing invalid file type: test_file.xlsx
+✓ File type validation passed for test_file.xlsx - message not saved to database
+Testing invalid file type: test_file.csv
+✓ File type validation passed for test_file.csv - message not saved to database
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for oversized file and NOT save to database" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.038">
+<failure message="contact_filling_form_automation.spec.ts:433:7 Should show error for oversized file and NOT save to database" type="FAILURE">
+<![CDATA[  [firefox] › contact_filling_form_automation/contact_filling_form_automation.spec.ts:433:7 › Contact Form Field Validation Tests › Should show error for oversized file and NOT save to database 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "File should be smaller than 500KB"
+    Received string:    "File should be empty."
+
+      453 |       .locator('[data-test="attachment-error"]')
+      454 |       .textContent();
+    > 455 |     expect(errorMessage).toContain("File should be smaller than 500KB");
+          |                          ^
+      456 |
+      457 |     // Database validation - message should NOT be saved
+      458 |     const messageExists = await checkMessageInDatabase(
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:455:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-firefox/video.webm]]
+
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Success Flow with Database Check › Successful form submission with database validation" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.17">
+<system-out>
+<![CDATA[Success message found with selector: .alert-success
+✓ Database validation passed - message saved successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Subject Options › All subject options are available" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="4.393">
+</testcase>
+</testsuite>
+<testsuite name="contact_filling_form_automation/contact_filling_form_automation.spec.ts" timestamp="2025-08-02T08:48:10.762Z" hostname="webkit" tests="18" failures="1" skipped="0" time="187.35" errors="0">
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="15.357">
+<system-out>
+<![CDATA[Running test case: valid_contact_form
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form"
+✓ Test case "valid_contact_form" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_webmaster" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.471">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_webmaster
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_webmaster"
+✓ Test case "valid_contact_form_webmaster" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_return" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.532">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_return
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_return"
+✓ Test case "valid_contact_form_return" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_payments" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="12.971">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_payments
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_payments"
+✓ Test case "valid_contact_form_payments" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_warranty" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="12.054">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_warranty
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_warranty"
+✓ Test case "valid_contact_form_warranty" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: valid_contact_form_order_status" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="8.396">
+<system-out>
+<![CDATA[Running test case: valid_contact_form_order_status
+Success message found with selector: .alert-success
+✓ Database validation passed for "valid_contact_form_order_status"
+✓ Test case "valid_contact_form_order_status" passed - Success scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_empty_subject" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.438">
+<system-out>
+<![CDATA[Running test case: invalid_empty_subject
+✓ Test case "invalid_empty_subject" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_short_message" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="9.546">
+<system-out>
+<![CDATA[Running test case: invalid_short_message
+✓ Test case "invalid_short_message" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_sql" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="9.574">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_sql
+✓ Database validation passed for error case "invalid_file_type_sql" - message not saved
+✓ Test case "invalid_file_type_sql" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_xlsx" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.696">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_xlsx
+✓ Database validation passed for error case "invalid_file_type_xlsx" - message not saved
+✓ Test case "invalid_file_type_xlsx" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_type_csv" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="10.719">
+<system-out>
+<![CDATA[Running test case: invalid_file_type_csv
+✓ Database validation passed for error case "invalid_file_type_csv" - message not saved
+✓ Test case "invalid_file_type_csv" passed - Error scenario
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Automation with Database Validation › Database Validation Test: invalid_file_size" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="7.107">
+<system-out>
+<![CDATA[Running test case: invalid_file_size
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for empty subject" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="6.433">
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for short message" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="5.881">
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for invalid file types and NOT save to database" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="18.07">
+<system-out>
+<![CDATA[Testing invalid file type: test_file.sql
+✓ File type validation passed for test_file.sql - message not saved to database
+Testing invalid file type: test_file.xlsx
+✓ File type validation passed for test_file.xlsx - message not saved to database
+Testing invalid file type: test_file.csv
+✓ File type validation passed for test_file.csv - message not saved to database
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Field Validation Tests › Should show error for oversized file and NOT save to database" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="5.268">
+<failure message="contact_filling_form_automation.spec.ts:433:7 Should show error for oversized file and NOT save to database" type="FAILURE">
+<![CDATA[  [webkit] › contact_filling_form_automation/contact_filling_form_automation.spec.ts:433:7 › Contact Form Field Validation Tests › Should show error for oversized file and NOT save to database 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "File should be smaller than 500KB"
+    Received string:    "File should be empty."
+
+      453 |       .locator('[data-test="attachment-error"]')
+      454 |       .textContent();
+    > 455 |     expect(errorMessage).toContain("File should be smaller than 500KB");
+          |                          ^
+      456 |
+      457 |     // Database validation - message should NOT be saved
+      458 |     const messageExists = await checkMessageInDatabase(
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:455:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/contact_filling_form_autom-0736b-le-and-NOT-save-to-database-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-webkit/video.webm]]
+
+[[ATTACHMENT|contact_filling_form_autom-0736b-le-and-NOT-save-to-database-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Success Flow with Database Check › Successful form submission with database validation" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.222">
+<system-out>
+<![CDATA[Success message found with selector: .alert-success
+✓ Database validation passed - message saved successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Form Subject Options › All subject options are available" classname="contact_filling_form_automation/contact_filling_form_automation.spec.ts" time="11.615">
+</testcase>
+</testsuite>
+</testsuites>

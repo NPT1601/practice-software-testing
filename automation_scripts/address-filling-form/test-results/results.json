@@ -1,0 +1,2103 @@
+{
+  "config": {
+    "configFile": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/playwright.config.ts",
+    "rootDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "address-filling-form/address_filling_form_automation.spec.ts",
+      "file": "address-filling-form/address_filling_form_automation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Address Form Filling: Nhập đầy đủ dữ liệu hợp lệ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11343,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Nhập đầy đủ dữ liệu hợp lệ\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:15.991Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13988,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Nhập đầy đủ dữ liệu hợp lệ\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:55.469Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 7847,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Nhập đầy đủ dữ liệu hợp lệ\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:29.055Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-836246eb6814c99d53f3",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Để trống tất cả trường",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11458,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Để trống tất cả trường\n"
+                    },
+                    {
+                      "text": "Street: \"\"\n"
+                    },
+                    {
+                      "text": "City: \"\"\n"
+                    },
+                    {
+                      "text": "State: \"\"\n"
+                    },
+                    {
+                      "text": "Country: \"\"\n"
+                    },
+                    {
+                      "text": "Postal: \"\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:16.005Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13838,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Để trống tất cả trường\n"
+                    },
+                    {
+                      "text": "Street: \"\"\n"
+                    },
+                    {
+                      "text": "City: \"\"\n"
+                    },
+                    {
+                      "text": "State: \"\"\n"
+                    },
+                    {
+                      "text": "Country: \"\"\n"
+                    },
+                    {
+                      "text": "Postal: \"\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:55.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7253,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Để trống tất cả trường\n"
+                    },
+                    {
+                      "text": "Street: \"\"\n"
+                    },
+                    {
+                      "text": "City: \"\"\n"
+                    },
+                    {
+                      "text": "State: \"\"\n"
+                    },
+                    {
+                      "text": "Country: \"\"\n"
+                    },
+                    {
+                      "text": "Postal: \"\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:33.895Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-145c9f911451708424a5",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Street quá 70 ký tự",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 16482,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Street quá 70 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:15.997Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 18469,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Street quá 70 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:56.094Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 12466,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Street quá 70 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:33.799Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-b61caf8c7a99c6ebb35e",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Postal code quá 10 ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 10956,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Postal code quá 10 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"12345678901\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:15.990Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 18380,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Postal code quá 10 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"12345678901\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:55.581Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12005,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Postal code quá 10 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"12345678901\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:36.130Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-ef4497e09a1b823667f3",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: City rỗng",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7818,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: City rỗng\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:27.740Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7222,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: City rỗng\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:10.439Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 7486,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: City rỗng\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:37.712Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-ca34093dde697fe23297",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: State vượt quá 40 ký tự",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12851,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: State vượt quá 40 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:28.135Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12661,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: State vượt quá 40 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:12.169Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12253,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: State vượt quá 40 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:41.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-4a63f03f99ae246fba16",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Country là khoảng trắng",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12753,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    8 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Country là khoảng trắng\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \" \"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:28.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 15201,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Country là khoảng trắng\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \" \"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:16.881Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 11398,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 9,
+                      "line": 104
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 9,
+                        "line": 104
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 102 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 103 |\u001b[39m         page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m       \u001b[90m// Kiểm tra có ít nhất một thông báo lỗi\u001b[39m\n \u001b[90m 107 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".alert-danger\"\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Country là khoảng trắng\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \" \"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:45.203Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 9,
+                    "line": 104
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-ac6c790dd88393bea7f7",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Street chỉ 1 ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6721,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Street chỉ 1 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"A\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:35.564Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 9763,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Street chỉ 1 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"A\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:17.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6592,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Street chỉ 1 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"A\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:46.996Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-18214c6d03223598d750",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Postal code đúng 10 ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6686,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Postal code đúng 10 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1234567890\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:42.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7910,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Postal code đúng 10 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1234567890\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:17.666Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 13161,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: enabled\nReceived: disabled\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button disabled type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: enabled\nReceived: disabled\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button disabled type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"disabled\"\u001b[22m\n\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:84:67",
+                    "location": {
+                      "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                      "column": 67,
+                      "line": 84
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[36mif\u001b[39m (record\u001b[33m.\u001b[39m\u001b[33mExpectedResult\u001b[39m\u001b[33m.\u001b[39mincludes(\u001b[32m\"Chuyển sang bước thanh toán\"\u001b[39m)) {\n \u001b[90m 83 |\u001b[39m       \u001b[90m// Kiểm tra button proceed-3 có enabled không\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m       \u001b[90m// Nhấn tiếp tục từ bước address (bước 3) sang bước payment (bước 4)\u001b[39m\n \u001b[90m 87 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                        "column": 67,
+                        "line": 84
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('button[data-test=\"proceed-3\"]')\nExpected: enabled\nReceived: disabled\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('button[data-test=\"proceed-3\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <button disabled type=\"button\" awnextstep=\"\" data-test=\"proceed-3\" class=\"btn btn-success\" _ngcontent-ng-c1226357352=\"\">          </button>\u001b[22m\n\u001b[2m      - unexpected value \"disabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[36mif\u001b[39m (record\u001b[33m.\u001b[39m\u001b[33mExpectedResult\u001b[39m\u001b[33m.\u001b[39mincludes(\u001b[32m\"Chuyển sang bước thanh toán\"\u001b[39m)) {\n \u001b[90m 83 |\u001b[39m       \u001b[90m// Kiểm tra button proceed-3 có enabled không\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m       \u001b[90m// Nhấn tiếp tục từ bước address (bước 3) sang bước payment (bước 4)\u001b[39m\n \u001b[90m 87 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button[data-test=\"proceed-3\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:84:67\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Test: Postal code đúng 10 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1234567890\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:49.409Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts",
+                    "column": 67,
+                    "line": 84
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-ae0e5ade3b19330f54d4",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: Trường hợp ký tự đặc biệt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7011,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Trường hợp ký tự đặc biệt\n"
+                    },
+                    {
+                      "text": "Street: \"ABC@ 123\"\n"
+                    },
+                    {
+                      "text": "City: \"TPHOCHIMINH\"\n"
+                    },
+                    {
+                      "text": "State: \"TN\"\n"
+                    },
+                    {
+                      "text": "Country: \"AUSTRIA\"\n"
+                    },
+                    {
+                      "text": "Postal: \"70000\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:43.695Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8252,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Trường hợp ký tự đặc biệt\n"
+                    },
+                    {
+                      "text": "Street: \"ABC@ 123\"\n"
+                    },
+                    {
+                      "text": "City: \"TPHOCHIMINH\"\n"
+                    },
+                    {
+                      "text": "State: \"TN\"\n"
+                    },
+                    {
+                      "text": "Country: \"AUSTRIA\"\n"
+                    },
+                    {
+                      "text": "Postal: \"70000\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:26.380Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7204,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: Trường hợp ký tự đặc biệt\n"
+                    },
+                    {
+                      "text": "Street: \"ABC@ 123\"\n"
+                    },
+                    {
+                      "text": "City: \"TPHOCHIMINH\"\n"
+                    },
+                    {
+                      "text": "State: \"TN\"\n"
+                    },
+                    {
+                      "text": "Country: \"AUSTRIA\"\n"
+                    },
+                    {
+                      "text": "Postal: \"70000\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:53.921Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-967108746d68c55bc882",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "Address Form Filling: City bé hơn 6 ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6116,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: City bé hơn 6 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"x\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:36:48.987Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7565,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: City bé hơn 6 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"x\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:25.587Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7464,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test: City bé hơn 6 ký tự\n"
+                    },
+                    {
+                      "text": "Street: \"123 Main St\"\n"
+                    },
+                    {
+                      "text": "City: \"x\"\n"
+                    },
+                    {
+                      "text": "State: \"Vienna\"\n"
+                    },
+                    {
+                      "text": "Country: \"Austria\"\n"
+                    },
+                    {
+                      "text": "Postal: \"1010\"\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-02T08:37:53.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82d1abd22182380172b7-e81995f9239dea48549a",
+          "file": "address-filling-form/address_filling_form_automation.spec.ts",
+          "line": 56,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-02T08:36:15.340Z",
+    "duration": 107480.13799999999,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

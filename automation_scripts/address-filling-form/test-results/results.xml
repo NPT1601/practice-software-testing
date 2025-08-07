@@ -1,0 +1,863 @@
+<testsuites id="" name="" tests="33" failures="12" skipped="0" errors="0" time="107.480138">
+<testsuite name="address-filling-form/address_filling_form_automation.spec.ts" timestamp="2025-08-02T08:36:15.366Z" hostname="chromium" tests="11" failures="3" skipped="0" time="110.195" errors="0">
+<testcase name="Address Form Filling: Nhập đầy đủ dữ liệu hợp lệ" classname="address-filling-form/address_filling_form_automation.spec.ts" time="11.343">
+<system-out>
+<![CDATA[Test: Nhập đầy đủ dữ liệu hợp lệ
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Để trống tất cả trường" classname="address-filling-form/address_filling_form_automation.spec.ts" time="11.458">
+<system-out>
+<![CDATA[Test: Để trống tất cả trường
+Street: ""
+City: ""
+State: ""
+Country: ""
+Postal: ""
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Street quá 70 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="16.482">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Street quá 70 ký tự" type="FAILURE">
+<![CDATA[  [chromium] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Street quá 70 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Street quá 70 ký tự
+Street: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Postal code quá 10 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="10.956">
+<system-out>
+<![CDATA[Test: Postal code quá 10 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "12345678901"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: City rỗng" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.818">
+<system-out>
+<![CDATA[Test: City rỗng
+Street: "123 Main St"
+City: ""
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: State vượt quá 40 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="12.851">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: State vượt quá 40 ký tự" type="FAILURE">
+<![CDATA[  [chromium] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: State vượt quá 40 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        8 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: State vượt quá 40 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Country: "Austria"
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Country là khoảng trắng" classname="address-filling-form/address_filling_form_automation.spec.ts" time="12.753">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Country là khoảng trắng" type="FAILURE">
+<![CDATA[  [chromium] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Country là khoảng trắng 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        8 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Country là khoảng trắng
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: " "
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Street chỉ 1 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="6.721">
+<system-out>
+<![CDATA[Test: Street chỉ 1 ký tự
+Street: "A"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Postal code đúng 10 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="6.686">
+<system-out>
+<![CDATA[Test: Postal code đúng 10 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1234567890"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Trường hợp ký tự đặc biệt" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.011">
+<system-out>
+<![CDATA[Test: Trường hợp ký tự đặc biệt
+Street: "ABC@ 123"
+City: "TPHOCHIMINH"
+State: "TN"
+Country: "AUSTRIA"
+Postal: "70000"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: City bé hơn 6 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="6.116">
+<system-out>
+<![CDATA[Test: City bé hơn 6 ký tự
+Street: "123 Main St"
+City: "x"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="address-filling-form/address_filling_form_automation.spec.ts" timestamp="2025-08-02T08:36:15.366Z" hostname="firefox" tests="11" failures="4" skipped="0" time="133.249" errors="0">
+<testcase name="Address Form Filling: Nhập đầy đủ dữ liệu hợp lệ" classname="address-filling-form/address_filling_form_automation.spec.ts" time="13.988">
+<system-out>
+<![CDATA[Test: Nhập đầy đủ dữ liệu hợp lệ
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Để trống tất cả trường" classname="address-filling-form/address_filling_form_automation.spec.ts" time="13.838">
+<system-out>
+<![CDATA[Test: Để trống tất cả trường
+Street: ""
+City: ""
+State: ""
+Country: ""
+Postal: ""
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Street quá 70 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="18.469">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Street quá 70 ký tự" type="FAILURE">
+<![CDATA[  [firefox] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Street quá 70 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Street quá 70 ký tự
+Street: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Postal code quá 10 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="18.38">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Postal code quá 10 ký tự" type="FAILURE">
+<![CDATA[  [firefox] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Postal code quá 10 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Postal code quá 10 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "12345678901"
+
+[[ATTACHMENT|address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: City rỗng" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.222">
+<system-out>
+<![CDATA[Test: City rỗng
+Street: "123 Main St"
+City: ""
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: State vượt quá 40 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="12.661">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: State vượt quá 40 ký tự" type="FAILURE">
+<![CDATA[  [firefox] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: State vượt quá 40 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        8 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: State vượt quá 40 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Country: "Austria"
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Country là khoảng trắng" classname="address-filling-form/address_filling_form_automation.spec.ts" time="15.201">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Country là khoảng trắng" type="FAILURE">
+<![CDATA[  [firefox] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Country là khoảng trắng 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Country là khoảng trắng
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: " "
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Street chỉ 1 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="9.763">
+<system-out>
+<![CDATA[Test: Street chỉ 1 ký tự
+Street: "A"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Postal code đúng 10 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.91">
+<system-out>
+<![CDATA[Test: Postal code đúng 10 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1234567890"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Trường hợp ký tự đặc biệt" classname="address-filling-form/address_filling_form_automation.spec.ts" time="8.252">
+<system-out>
+<![CDATA[Test: Trường hợp ký tự đặc biệt
+Street: "ABC@ 123"
+City: "TPHOCHIMINH"
+State: "TN"
+Country: "AUSTRIA"
+Postal: "70000"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: City bé hơn 6 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.565">
+<system-out>
+<![CDATA[Test: City bé hơn 6 ký tự
+Street: "123 Main St"
+City: "x"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="address-filling-form/address_filling_form_automation.spec.ts" timestamp="2025-08-02T08:36:15.366Z" hostname="webkit" tests="11" failures="5" skipped="0" time="105.129" errors="0">
+<testcase name="Address Form Filling: Nhập đầy đủ dữ liệu hợp lệ" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.847">
+<system-out>
+<![CDATA[Test: Nhập đầy đủ dữ liệu hợp lệ
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Để trống tất cả trường" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.253">
+<system-out>
+<![CDATA[Test: Để trống tất cả trường
+Street: ""
+City: ""
+State: ""
+Country: ""
+Postal: ""
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Street quá 70 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="12.466">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Street quá 70 ký tự" type="FAILURE">
+<![CDATA[  [webkit] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Street quá 70 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        8 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Street quá 70 ký tự
+Street: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-715a4-Filling-Street-quá-70-ký-tự-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Postal code quá 10 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="12.005">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Postal code quá 10 ký tự" type="FAILURE">
+<![CDATA[  [webkit] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Postal code quá 10 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Postal code quá 10 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "12345678901"
+
+[[ATTACHMENT|address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-93883-ng-Postal-code-quá-10-ký-tự-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: City rỗng" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.486">
+<system-out>
+<![CDATA[Test: City rỗng
+Street: "123 Main St"
+City: ""
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: State vượt quá 40 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="12.253">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: State vượt quá 40 ký tự" type="FAILURE">
+<![CDATA[  [webkit] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: State vượt quá 40 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        8 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: State vượt quá 40 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+Country: "Austria"
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-3d840-ing-State-vượt-quá-40-ký-tự-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Country là khoảng trắng" classname="address-filling-form/address_filling_form_automation.spec.ts" time="11.398">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Country là khoảng trắng" type="FAILURE">
+<![CDATA[  [webkit] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Country là khoảng trắng 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeDisabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: disabled
+    Received: enabled
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "enabled"
+
+
+      102 |       await expect(
+      103 |         page.locator('button[data-test="proceed-3"]')
+    > 104 |       ).toBeDisabled();
+          |         ^
+      105 |
+      106 |       // Kiểm tra có ít nhất một thông báo lỗi
+      107 |       await expect(page.locator(".alert-danger").first()).toBeVisible();
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:104:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Country là khoảng trắng
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: " "
+Postal: "1010"
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-1420d-ing-Country-là-khoảng-trắng-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Street chỉ 1 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="6.592">
+<system-out>
+<![CDATA[Test: Street chỉ 1 ký tự
+Street: "A"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Postal code đúng 10 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="13.161">
+<failure message="address_filling_form_automation.spec.ts:56:7 Address Form Filling: Postal code đúng 10 ký tự" type="FAILURE">
+<![CDATA[  [webkit] › address-filling-form/address_filling_form_automation.spec.ts:56:7 › Address Form Filling: Postal code đúng 10 ký tự 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeEnabled()
+
+    Locator: locator('button[data-test="proceed-3"]')
+    Expected: enabled
+    Received: disabled
+    Call log:
+      - Expect "toBeEnabled" with timeout 5000ms
+      - waiting for locator('button[data-test="proceed-3"]')
+        9 × locator resolved to <button disabled type="button" awnextstep="" data-test="proceed-3" class="btn btn-success" _ngcontent-ng-c1226357352="">          </button>
+          - unexpected value "disabled"
+
+
+      82 |     if (record.ExpectedResult.includes("Chuyển sang bước thanh toán")) {
+      83 |       // Kiểm tra button proceed-3 có enabled không
+    > 84 |       await expect(page.locator('button[data-test="proceed-3"]')).toBeEnabled();
+         |                                                                   ^
+      85 |
+      86 |       // Nhấn tiếp tục từ bước address (bước 3) sang bước payment (bước 4)
+      87 |       await page.click('button[data-test="proceed-3"]');
+        at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/address-filling-form/address_filling_form_automation.spec.ts:84:67
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Test: Postal code đúng 10 ký tự
+Street: "123 Main St"
+City: "Vienna"
+State: "Vienna"
+Country: "Austria"
+Postal: "1234567890"
+
+[[ATTACHMENT|address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/video.webm]]
+
+[[ATTACHMENT|address-filling-form-addre-f3f4f-g-Postal-code-đúng-10-ký-tự-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: Trường hợp ký tự đặc biệt" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.204">
+<system-out>
+<![CDATA[Test: Trường hợp ký tự đặc biệt
+Street: "ABC@ 123"
+City: "TPHOCHIMINH"
+State: "TN"
+Country: "AUSTRIA"
+Postal: "70000"
+]]>
+</system-out>
+</testcase>
+<testcase name="Address Form Filling: City bé hơn 6 ký tự" classname="address-filling-form/address_filling_form_automation.spec.ts" time="7.464">
+<system-out>
+<![CDATA[Test: City bé hơn 6 ký tự
+Street: "123 Main St"
+City: "x"
+State: "Vienna"
+Country: "Austria"
+Postal: "1010"
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

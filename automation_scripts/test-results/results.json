@@ -1,0 +1,2447 @@
+{
+  "config": {
+    "configFile": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/playwright.config.ts",
+    "rootDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+      "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Contact Form Automation with Database Validation",
+          "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+          "line": 151,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Database Validation Test: valid_contact_form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11683,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:59.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8429,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:41.278Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7118,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:15.815Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-c0f0202718de75acca17",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: valid_contact_form_webmaster",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7002,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_webmaster\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_webmaster\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_webmaster\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:11.323Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7502,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_webmaster\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_webmaster\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_webmaster\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:50.597Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6592,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_webmaster\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_webmaster\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_webmaster\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:22.942Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-30b09a080f25bdf5fae0",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: valid_contact_form_return",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6841,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_return\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_return\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_return\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:18.332Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11365,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_return\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_return\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_return\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:58.107Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6625,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_return\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_return\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_return\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:29.537Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-1e0c54605b69022ebbac",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: valid_contact_form_payments",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8546,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_payments\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_payments\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_payments\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:04.202Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7901,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_payments\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_payments\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_payments\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:40.986Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6859,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_payments\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_payments\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_payments\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:18.136Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-88709c36cae84191494e",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: valid_contact_form_warranty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7025,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_warranty\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_warranty\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_warranty\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:12.757Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7085,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_warranty\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_warranty\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_warranty\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:48.902Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6607,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_warranty\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_warranty\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_warranty\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:25.149Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-20f67e4b500b8c1dee80",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: valid_contact_form_order_status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7772,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_order_status\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_order_status\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_order_status\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:19.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7890,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_order_status\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_order_status\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_order_status\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:55.992Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6619,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: valid_contact_form_order_status\n"
+                        },
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed for \"valid_contact_form_order_status\"\n"
+                        },
+                        {
+                          "text": "✓ Test case \"valid_contact_form_order_status\" passed - Success scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:31.761Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-4fb463e57ab8a8c72350",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: invalid_empty_subject",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8303,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_empty_subject\n"
+                        },
+                        {
+                          "text": "✓ Test case \"invalid_empty_subject\" passed - Error scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:07.366Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7476,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_empty_subject\n"
+                        },
+                        {
+                          "text": "✓ Test case \"invalid_empty_subject\" passed - Error scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:43.140Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6521,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_empty_subject\n"
+                        },
+                        {
+                          "text": "✓ Test case \"invalid_empty_subject\" passed - Error scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:19.254Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-20dc0dbff00291c75b80",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: invalid_short_message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7204,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_short_message\n"
+                        },
+                        {
+                          "text": "✓ Test case \"invalid_short_message\" passed - Error scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:16.354Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7695,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_short_message\n"
+                        },
+                        {
+                          "text": "✓ Test case \"invalid_short_message\" passed - Error scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:50.639Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6534,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_short_message\n"
+                        },
+                        {
+                          "text": "✓ Test case \"invalid_short_message\" passed - Error scenario\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:25.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-7b6b8836cbd1909fc637",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: invalid_file_type_sql",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 7329,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_sql\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:23.561Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11415,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_sql\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:58.344Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 6650,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_sql\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:32.324Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-f8f39--Test-invalid-file-type-sql-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-bbf33609fe7c246ad4d4",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: invalid_file_type_xlsx",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 8904,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_xlsx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:07.165Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 7514,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_xlsx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:46.093Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 6713,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_xlsx\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:23.715Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-84674-Test-invalid-file-type-xlsx-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-8683d30e26175cb2e598",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: invalid_file_type_csv",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 7492,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_csv\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:20.465Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 9252,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_csv\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:54.388Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 6965,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 33,
+                          "line": 294
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 33,
+                            "line": 294
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 292 |\u001b[39m             data\u001b[33m.\u001b[39mmessage\n \u001b[90m 293 |\u001b[39m           )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 294 |\u001b[39m           expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 295 |\u001b[39m           console\u001b[33m.\u001b[39mlog(\n \u001b[90m 296 |\u001b[39m             \u001b[32m`✓ Database validation passed for error case \"${data.test_case}\" - message not saved`\u001b[39m\n \u001b[90m 297 |\u001b[39m           )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:294:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_type_csv\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:30.899Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-72b95--Test-invalid-file-type-csv-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 33,
+                        "line": 294
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-90422f80159346dc0dc8",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "Database Validation Test: invalid_file_size",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8172,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_size\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:30.490Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9672,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_size\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:04.989Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6633,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running test case: invalid_file_size\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:38.400Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-e3fdcd06f366b58a75b4",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 195,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Contact Form Field Validation Tests",
+          "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+          "line": 327,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should show error for empty subject",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6113,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:52.295Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5365,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:25.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5125,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:04.678Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-d1fb634089fa60277fcb",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 352,
+              "column": 7
+            },
+            {
+              "title": "Should show error for short message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6109,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:52.281Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5396,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:28.842Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:10.499Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-939ffc5674cc84b52d1b",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 363,
+              "column": 7
+            },
+            {
+              "title": "Should show error for invalid file types and NOT save to database",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 9090,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:424:31",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 31,
+                          "line": 424
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 422 |\u001b[39m           \u001b[32m`❌ BUG DETECTED: Message with invalid file type ${testCase.file} was saved to database!`\u001b[39m\n \u001b[90m 423 |\u001b[39m         )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 424 |\u001b[39m         expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail the test if message is saved\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 425 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 426 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\n \u001b[90m 427 |\u001b[39m           \u001b[32m`✓ File type validation passed for ${testCase.file} - message not saved to database`\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 31,
+                            "line": 424
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 422 |\u001b[39m           \u001b[32m`❌ BUG DETECTED: Message with invalid file type ${testCase.file} was saved to database!`\u001b[39m\n \u001b[90m 423 |\u001b[39m         )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 424 |\u001b[39m         expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail the test if message is saved\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 425 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 426 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\n \u001b[90m 427 |\u001b[39m           \u001b[32m`✓ File type validation passed for ${testCase.file} - message not saved to database`\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:424:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Testing invalid file type: test_file.sql\n"
+                        },
+                        {
+                          "text": "❌ BUG DETECTED: Message with invalid file type test_file.sql was saved to database!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:52.290Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 31,
+                        "line": 424
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 7974,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:424:31",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 31,
+                          "line": 424
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 422 |\u001b[39m           \u001b[32m`❌ BUG DETECTED: Message with invalid file type ${testCase.file} was saved to database!`\u001b[39m\n \u001b[90m 423 |\u001b[39m         )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 424 |\u001b[39m         expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail the test if message is saved\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 425 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 426 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\n \u001b[90m 427 |\u001b[39m           \u001b[32m`✓ File type validation passed for ${testCase.file} - message not saved to database`\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 31,
+                            "line": 424
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 422 |\u001b[39m           \u001b[32m`❌ BUG DETECTED: Message with invalid file type ${testCase.file} was saved to database!`\u001b[39m\n \u001b[90m 423 |\u001b[39m         )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 424 |\u001b[39m         expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail the test if message is saved\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 425 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 426 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\n \u001b[90m 427 |\u001b[39m           \u001b[32m`✓ File type validation passed for ${testCase.file} - message not saved to database`\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:424:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Testing invalid file type: test_file.sql\n"
+                        },
+                        {
+                          "text": "❌ BUG DETECTED: Message with invalid file type test_file.sql was saved to database!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:32.272Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 31,
+                        "line": 424
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 7528,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:424:31",
+                        "location": {
+                          "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                          "column": 31,
+                          "line": 424
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 422 |\u001b[39m           \u001b[32m`❌ BUG DETECTED: Message with invalid file type ${testCase.file} was saved to database!`\u001b[39m\n \u001b[90m 423 |\u001b[39m         )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 424 |\u001b[39m         expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail the test if message is saved\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 425 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 426 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\n \u001b[90m 427 |\u001b[39m           \u001b[32m`✓ File type validation passed for ${testCase.file} - message not saved to database`\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                            "column": 31,
+                            "line": 424
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 422 |\u001b[39m           \u001b[32m`❌ BUG DETECTED: Message with invalid file type ${testCase.file} was saved to database!`\u001b[39m\n \u001b[90m 423 |\u001b[39m         )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 424 |\u001b[39m         expect(messageExists)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail the test if message is saved\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 425 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 426 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\n \u001b[90m 427 |\u001b[39m           \u001b[32m`✓ File type validation passed for ${testCase.file} - message not saved to database`\u001b[39m\u001b[0m\n\u001b[2m    at /Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts:424:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Testing invalid file type: test_file.sql\n"
+                        },
+                        {
+                          "text": "❌ BUG DETECTED: Message with invalid file type test_file.sql was saved to database!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:10.206Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/test-results/contact_filling_form_autom-01519-es-and-NOT-save-to-database-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/npt/Documents/SE_Testing/practice-software-testing/automation_scripts/contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+                        "column": 31,
+                        "line": 424
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-ffe049cd054c2923d417",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 373,
+              "column": 7
+            },
+            {
+              "title": "Should show error for oversized file and NOT save to database",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6177,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ File size validation passed - message not saved to database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:52.303Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5955,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ File size validation passed - message not saved to database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:34.342Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4507,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ File size validation passed - message not saved to database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:10.991Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-45b70314da83b15e2f20",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 433,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Contact Form Success Flow with Database Check",
+          "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+          "line": 477,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Successful form submission with database validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7582,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed - message saved successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:59.575Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8194,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed - message saved successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:34.917Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6921,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Success message found with selector: .alert-success\n"
+                        },
+                        {
+                          "text": "✓ Database validation passed - message saved successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:16.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-546d22fcaa0ca346e844",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 502,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Contact Form Subject Options",
+          "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+          "line": 565,
+          "column": 6,
+          "specs": [
+            {
+              "title": "All subject options are available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4605,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:42:59.591Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5526,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:43:39.678Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3919,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T14:44:15.324Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "10ebbb19858feac7643f-7175e1df87ed327b2145",
+              "file": "contact_filling_form_automation/contact_filling_form_automation.spec.ts",
+              "line": 590,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-04T14:42:51.773Z",
+    "duration": 113438.95599999999,
+    "expected": 42,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

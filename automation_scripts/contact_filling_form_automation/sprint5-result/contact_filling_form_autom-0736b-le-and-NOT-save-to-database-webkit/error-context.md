@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: /
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contact":
+      - link "Contact":
+        - /url: /contact
+    - menuitem "Jane Doe":
+      - button "Jane Doe"
+- heading "Contact" [level=3]
+- text: Hello Jane Doe, please fill out this form to submit your message. Subject
+- combobox "Subject":
+  - option "Customer service" [selected]
+  - option "Webmaster"
+  - option "Return"
+  - option "Payments"
+  - option "Warranty"
+  - option "Status of my order"
+- text: Message *
+- textbox "Message *": This is a test message with oversized file to test file size validation.
+- text: Attachment
+- button "Attachment"
+- text: Only files with the
+- strong: txt
+- text: extension are allowed, and files must be 0kb.
+- alert: File should be empty.
+- button "Send"
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "|"
+  - link "Privacy Policy":
+    - /url: /privacy
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```

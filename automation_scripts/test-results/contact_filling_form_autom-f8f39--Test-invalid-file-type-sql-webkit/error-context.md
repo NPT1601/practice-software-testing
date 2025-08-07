@@ -1,0 +1,53 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: "#/contact"
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contakt":
+      - link "Contakt":
+        - /url: "#/contact"
+    - menuitem "User Data not found":
+      - button "User Data not found"
+- heading "Contact" [level=3]
+- text: Hello Jane Doe, please fill out this form to submit your message. Subject
+- combobox "Subject":
+  - option "Customer service" [selected]
+  - option "Webmaster"
+  - option "Return"
+  - 'option "Error 101: Subject not found"'
+  - option "Payments"
+  - option "Warranty"
+  - option "Status of my order"
+  - 'option "Error 202: Translation error"'
+- text: Message
+- textbox "Message": This is a test message with SQL file to test file validation.
+- text: Attachment
+- button "Attachment"
+- text: Only files with the
+- strong: txt, pdf or jpg
+- text: extension are allowed, and files must be smaller than 500KB.
+- button "Send"
+- text: The file extension is incorrect, we only accept txt files.
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```

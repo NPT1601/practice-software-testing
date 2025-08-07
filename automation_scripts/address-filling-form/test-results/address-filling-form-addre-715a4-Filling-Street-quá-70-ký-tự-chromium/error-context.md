@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: "#/contact"
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contakt":
+      - link "Contakt":
+        - /url: "#/contact"
+    - menuitem "User Data not found":
+      - button "User Data not found"
+    - menuitem "cart":
+      - link "cart":
+        - /url: "#/checkout"
+        - text:  1
+- list:
+  - listitem: Cart 1
+  - listitem: Sign in 2
+  - listitem: Address 3
+  - listitem: Payment 4
+- heading "Blliling Adress" [level=3]
+- textbox "Your Address *": Test street 98
+- textbox "Your City *": Vienna
+- textbox "Your State *": Vienna
+- textbox "Your Country *": Austria
+- textbox "Your Postcode *": "1010"
+- button
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+```

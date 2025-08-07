@@ -1,0 +1,31 @@
+{
+  "name": "contact-form-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation scripts for contact form testing with data driven approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "install:playwright": "playwright install",
+    "install:browsers": "playwright install chromium firefox webkit"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "contact-form",
+    "data-driven"
+  ],
+  "author": "Test Automation Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.0"
+  }
+}

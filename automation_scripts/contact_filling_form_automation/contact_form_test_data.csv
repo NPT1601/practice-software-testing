@@ -1,0 +1,13 @@
+test_case,subject,message,attachment_file,expected_result
+valid_contact_form,customer-service,This is a test message for customer service inquiry. I would like to know more about your services and how to get support.,test_file.txt,success
+valid_contact_form_webmaster,webmaster,This is a test message for webmaster. I found an issue with the website navigation and would like to report it for investigation.,test_file.txt,success
+valid_contact_form_return,return,This is a test message for return inquiry. I would like to return a product that I purchased recently and need assistance with the return process.,test_file.txt,success
+valid_contact_form_payments,payments,This is a test message for payments inquiry. I have a question about the payment methods available and would like to know more about the payment options.,test_file.txt,success
+valid_contact_form_warranty,warranty,This is a test message for warranty inquiry. I need information about the warranty coverage for my purchased product and how to claim warranty service.,test_file.txt,success
+valid_contact_form_order_status,status-of-order,This is a test message for order status inquiry. I would like to check the status of my recent order and get tracking information.,test_file.txt,success
+invalid_empty_subject,,This is a test message without subject to validate required field validation.,test_file.txt,error
+invalid_short_message,customer-service,Short message,test_file.txt,error
+invalid_file_type_sql,customer-service,This is a test message with SQL file to test file validation.,test_file.sql,error
+invalid_file_type_xlsx,customer-service,This is a test message with Excel file to test file validation.,test_file.xlsx,error
+invalid_file_type_csv,customer-service,This is a test message with CSV file to test file validation.,test_file.csv,error
+invalid_file_size,customer-service,This is a test message with oversized file to test file size validation.,large_file.pdf,error 
